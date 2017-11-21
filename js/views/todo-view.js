@@ -20,8 +20,11 @@ var app = app || {};
 			'click .toggle': 'toggleCompleted',
 			'dblclick label': 'edit',
 <<<<<<< HEAD
+<<<<<<< HEAD
 			'click .edit-btn': 'edit',
 			'click .priority-btn': 'togglePriority',
+=======
+>>>>>>> parent of 87bc27f... added edit button
 =======
 >>>>>>> parent of 87bc27f... added edit button
 			'click .destroy': 'clear',
