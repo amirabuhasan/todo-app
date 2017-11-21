@@ -19,8 +19,11 @@ var app = app || {};
 		events: {
 			'click .toggle': 'toggleCompleted',
 			'dblclick label': 'edit',
+<<<<<<< HEAD
 			'click .edit-btn': 'edit',
 			'click .priority-btn': 'togglePriority',
+=======
+>>>>>>> parent of 87bc27f... added edit button
 			'click .destroy': 'clear',
 			'keypress .edit': 'updateOnEnter',
 			'keydown .edit': 'revertOnEscape',
