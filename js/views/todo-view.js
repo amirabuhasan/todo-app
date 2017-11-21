@@ -19,20 +19,8 @@ var app = app || {};
 		events: {
 			'click .toggle': 'toggleCompleted',
 			'dblclick label': 'edit',
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 			'click .edit-btn': 'edit',
 			'click .priority-btn': 'togglePriority',
-=======
->>>>>>> parent of 87bc27f... added edit button
-=======
->>>>>>> parent of 87bc27f... added edit button
-=======
->>>>>>> parent of 87bc27f... added edit button
-=======
->>>>>>> parent of 87bc27f... added edit button
 			'click .destroy': 'clear',
 			'keypress .edit': 'updateOnEnter',
 			'keydown .edit': 'revertOnEscape',
@@ -63,8 +51,8 @@ var app = app || {};
 			}
 
 			this.$el.html(this.template(this.model.toJSON()));
-			this.$el.toggleClass('priority', this.model.get('priority'));
 			this.$el.toggleClass('completed', this.model.get('completed'));
+			this.$el.toggleClass('priority', this.model.get('priority'));
 			this.toggleVisible();
 			this.$input = this.$('.edit');
 			return this;
@@ -80,9 +68,6 @@ var app = app || {};
 				app.TodoFilter === 'completed';
 		},
 
-		togglePriority: function () {
-			this.model.togglePriority();
-		},
 		// Toggle the `"completed"` state of the model.
 		toggleCompleted: function () {
 			this.model.toggle();
@@ -90,7 +75,7 @@ var app = app || {};
 
 		togglePriority: function () {
 			this.model.get('completed') ?
-			this.model :
+			this.mode: 
 			this.model.togglePriority();
 		},
 
